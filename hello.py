@@ -55,6 +55,9 @@ print("--------------------")
 # ==
 print("Comparison: ", 2 == 3)
 
+# !=
+print("Comparison: ", 2 != 3)
+
 
 # To compare two values are greater or not
 # >
@@ -179,12 +182,36 @@ else:
 # range(start, stop, step)
 for a in range(1500,2705,5):
     if a % 5 == 0 and a % 7 == 0:
+        print('a: ', a)
 
-     print('a: ', a)
+# Explanation
+# a = 1500
+# if a % 5 == 0 and a % 7 == 0:
+# a % 5 == 0
+# a % 7 == 0
+# a % 5 =????
+# / operator ---> quotient
+# % operator ---> remainder
+# a % 5 = 0
+# a % 5 == 0 # True
+# a % 7 == 0 # False
+# if True and False:
+# False
 
-if a % 5 == 0:
-    print(a)
+# range(1500, 1515, 5)
+# write each step in the following way:
+# a = 1500
+# a % 5 = 0
+# a % 5 == 0 True 
+# a % 7 = 2
+# a % 7 == 0 False
+# a % 5 == 0 and a % 7 == 0 False
+# print statement runs or not
 
+
+
+# if a % 5 == 0:
+#     print(a)
 
 
 # print('a: ', list(a))
@@ -192,17 +219,53 @@ print('-------------------------------------------------')
 print(b)
 
 
-# wRITE Python program that prints each item and its corresponding type from the following list.
+# Write Python program that prints each item and its corresponding type from the following list.
 # Sample List : datalist = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class":'V', "section":'A'}]
 
 datalist = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class":'V', "section":'A'}]
 for a in  datalist:
     print(a, type(a))   
     
-
+print('datalist: ', datalist[-1])
 
 
 # type() - function
 #type(datalist)
 #print (type)(datalist)
 #print(datalist)
+
+
+# and, or, not -> logical operators
+
+# More datatypes
+
+# list datatype
+
+a = [1, 2, 3, 4, 5]
+b = [1,2,3,4,5, a]
+# b = [1,2,3,4,5, [1,2,3,4,5]]
+
+for i in b:
+    print(i)
+
+# tuple datatype
+a = (1, 2, 3, 4, 5)
+
+# set datatype
+# has only unique values
+a = {1, 2, 3, 4, 5}
+
+# dictionary datatype
+a = {
+    'key1': 'value1',
+    'key2': 'value2',
+    'key3': [1, 2, 3, 4, 5],
+    'key4': {
+        'key1': 'value1',
+    }
+}
+
+
+list1 = [1, 2, 3, 4, 5, 5, 2]
+print(set(list1))
+
