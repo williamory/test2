@@ -202,11 +202,11 @@ for a in range(1500,2705,5):
 # write each step in the following way:
 # a = 1500
 # a % 5 = 0
-# a % 5 == 0 True 
+# a % 5 == 0 (True) 
 # a % 7 = 2
-# a % 7 == 0 False
-# a % 5 == 0 and a % 7 == 0 False
-# print statement runs or not
+# a % 7 == 0 (False)
+# a % 5 == 0 and a % 7 == 0 (False)
+# print statement (not)
 
 
 
@@ -265,7 +265,64 @@ a = {
     }
 }
 
+a = {
+    'One': 1,
+    'Two': 2,
+    'Three': 3,
+    'Four': 4
+}
+
+print(a)
 
 list1 = [1, 2, 3, 4, 5, 5, 2]
-print(set(list1))
+print(set(list1)) # {1, 2, 3, 4, 5}
 
+
+# Function syntax
+# def <name>(<args>):
+#   <statement>
+
+def is_even(value):
+    # it has to be divisible by 2
+    if value % 2 == 0:
+        print("Even")
+
+
+
+
+
+    else:
+        print("Odd")
+
+is_even(12)
+ 
+
+def hello(val1="Chris"):
+    print("Hello", val1)
+
+
+print('hi there')
+hello("William")
+
+
+
+
+a = {
+    'One': 1,
+    'Two': 2,
+    'Three': 3,
+    'Four': 4
+}
+
+print(a.values())
+
+# import <library>
+import random
+
+coin = random.choice(['heads','tails'])
+print(coin)
+
+
+# generate a random number between 0 and 100
+
+# shuffle a list of numbers between 0 and 10
