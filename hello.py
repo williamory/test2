@@ -1,4 +1,3 @@
-# python - interpreter
 
 # Lists
 a = [5]
@@ -324,5 +323,74 @@ print(coin)
 
 
 # generate a random number between 0 and 100
+#Choice = Variable Random.randint gives you a random interger bettween the given range as here it is 1 - 100.
+choice = random.randint(1,100)
+print(choice)
 
-# shuffle a list of numbers between 0 and 10
+
+
+# number a list of numbers between 0 - 10
+# random.shuffle randomizes shuffles the list
+# Then we print the list
+
+number = list(range(11))
+random.shuffle(number)
+print(number)
+
+
+# Errors and Exceptions
+
+# print("hello, world)
+
+# x = int(input("What's x? "))
+# print(f"x is {x}")
+
+# try:
+#   <statement>
+# except:
+#   <statement>
+
+
+# try:
+#     x = int(input("What's x? "))
+#     print(f"x is {x}")
+# except ValueError:
+#     print("x is not an integer")
+
+
+# try:
+#     x = int(input("What's x?"))
+# except ValueError as ne: # Runs when the try statement fails
+#     pass
+# else: # Runs when the try statement passes/works
+#     print(f"x is {x}")
+
+# def test_func():
+#     pass
+
+
+
+# File handling
+
+# name = input("What's your name? ")
+
+# file = open("names.txt", "a")
+# file.write(name)
+# file.close()
+
+# \n = new lines
+# \t = tab
+
+
+with open("names.txt", "r") as f:
+    lines = f.readlines()
+for line in lines:
+    print(line)
+print(lines)
+
+import pandas as pd
+
+df = pd.read_csv('addresses.csv')
+print(df)
+
+df.to_csv('new.csv')
